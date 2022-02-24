@@ -6,14 +6,17 @@ import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class BatteryOptimizationsPackage implements ReactPackage {
+
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-      return Arrays.<NativeModule>asList(new BatteryOptimizationsModule(reactContext));
+        List<NativeModule> modules = new ArrayList<>();
+        modules.add(new BatteryOptimizationsModule(reactContext));
+        return modules;
     }
 
     public List<Class<? extends JavaScriptModule>> createJSModules() {
@@ -24,5 +27,4 @@ public class BatteryOptimizationsPackage implements ReactPackage {
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         return Collections.emptyList();
     }
-    
 }

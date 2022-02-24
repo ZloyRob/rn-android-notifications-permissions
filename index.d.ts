@@ -9,6 +9,7 @@ declare module 'rn-android-notifications-permissions' {
     isIgnoringBatteryOptimizations(): Promise<boolean>;
     open(): void;
   }
+  export const isIgnoringBatteryOptimizations = () => Promise<boolean>;
 }
 
 
