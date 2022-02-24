@@ -11,7 +11,7 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 
-public class RNAutostartModule extends ReactContextBaseJavaModule {
+public class AutostartModule extends ReactContextBaseJavaModule {
 
   private final ReactApplicationContext reactContext;
 
@@ -30,14 +30,14 @@ public class RNAutostartModule extends ReactContextBaseJavaModule {
     new Intent().setComponent(new ComponentName("com.asus.mobilemanager", "com.asus.mobilemanager.entry.FunctionActivity")).setData(Uri.parse("mobilemanager://function/entry/AutoStart"))
   };
 
-  public RNAutostartModule(ReactApplicationContext reactContext) {
+  public AutostartModule(ReactApplicationContext reactContext) {
     super(reactContext);
     this.reactContext = reactContext;
   }
 
   @Override
   public String getName() {
-    return "RNAutostart";
+    return "AutostartModule";
   }
 
   @ReactMethod 

@@ -1,5 +1,5 @@
 declare module 'rn-android-notifications-permissions' {
-  export const RNAutostart: {
+  export const Autostart: {
     isSupported(): Promise<boolean>;
     open(): void;
   };
@@ -8,9 +8,5 @@ declare module 'rn-android-notifications-permissions' {
     isSupported(): Promise<boolean>;
     isIgnoringBatteryOptimizations(): Promise<boolean>;
     open(): void;
-  }
-  
-  export function isIgnoringBatteryOptimizations(): Promise<boolean>;
+  };
 }
-
-

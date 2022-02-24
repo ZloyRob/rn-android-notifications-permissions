@@ -16,7 +16,7 @@ public class NotificationsPermissionsPackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
-        modules.add(new RNAutostartModule(reactContext));
+        modules.add(new AutostartModule(reactContext));
         modules.add(new BatteryOptimizationsModule(reactContext));
         return modules;
     }

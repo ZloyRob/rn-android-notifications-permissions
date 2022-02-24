@@ -1,9 +1,14 @@
 import { NativeModules, Platform} from 'react-native';
 
-export const isIgnoringBatteryOptimizations = () => {
-  if (Platform.OS === 'android') {
-    NativeModules.BatteryOptimizations.isIgnoringBatteryOptimizations();
-  }
-};
+const { BatteryOptimizationsModule, AutostartModule } = NativeModules;
 
-// export { RNAutostart, BatteryOptimizations} = NativeModules;
+export const BatteryOptimizations = {
+  isSupported:  BatteryOptimizationsModule.isSupported,
+  isIgnoringBatteryOptimizations:  BatteryOptimizationsModule.isIgnoringBatteryOptimizations,
+  open:  BatteryOptimizationsModule.open,
+}
+
+export const Autostart = {
+  isSupported:  AutostartModule.isSupported,
+  open:  AutostartModule.open,
+}

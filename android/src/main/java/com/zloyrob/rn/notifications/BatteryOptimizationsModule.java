@@ -27,7 +27,7 @@ public class BatteryOptimizationsModule extends ReactContextBaseJavaModule {
 
     @Override
     public String getName() {
-        return "BatteryOptimizations";
+        return "BatteryOptimizationsModule";
     }
 
     @SuppressLint("AnnotateVersionCheck")
