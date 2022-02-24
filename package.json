@@ -1,0 +1,25 @@
+{
+  "name": "rn-android-notifications-permissions",
+  "version": "0.0.1",
+  "description": "React-native library to get necessary permissions for notifications on android",
+  "author": {
+    "name": "ZloyRob",
+    "email": "vadimandsaneek@yandex.ru"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "homepage": "https://github.com/ZloyRob/rn-android-notifications-permissions",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ZloyRob/rn-android-notifications-permissions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ZloyRob/rn-android-notifications-permissions/issues"
+  },
+  "keywords": [
+    "react-native",
+    "notification",
+    "settings",
+    "android"
+  ]
+}
