@@ -1,5 +1,7 @@
 # rn-android-notifications-permissions
 
+[![NPM version](https://badge.fury.io/js/rn-android-notifications-permissions.svg)](https://www.npmjs.com/package/rn-android-notifications-permissions)
+
 ## Description
 
 React-native library to get necessary permissions for notifications on android (Autostart and Battery optimizations)
