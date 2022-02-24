@@ -6,4 +6,4 @@ export const isIgnoringBatteryOptimizations = () => {
   }
 };
 
-export { RNAutostart, BatteryOptimizations} = NativeModules;
+// export { RNAutostart, BatteryOptimizations} = NativeModules;

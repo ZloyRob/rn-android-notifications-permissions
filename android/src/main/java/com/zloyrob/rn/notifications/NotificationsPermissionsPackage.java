@@ -1,3 +1,4 @@
+
 package com.zloyrob.rn.notifications;
 
 import com.facebook.react.ReactPackage;
@@ -10,11 +11,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class BatteryOptimizationsPackage implements ReactPackage {
+public class NotificationsPermissionsPackage implements ReactPackage {
 
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
+        modules.add(new RNAutostartModule(reactContext));
         modules.add(new BatteryOptimizationsModule(reactContext));
         return modules;
     }
