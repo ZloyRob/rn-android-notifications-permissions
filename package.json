@@ -1,6 +1,6 @@
 {
   "name": "rn-android-notifications-permissions",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React-native library to get necessary permissions for notifications on android",
   "author": {
     "name": "ZloyRob",
