@@ -12,7 +12,7 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 
 public class AutostartModule extends ReactContextBaseJavaModule {
-
+  private static final int REQUEST_CODE = 2;
   private final ReactApplicationContext reactContext;
 
   private final Intent[] AUTO_START_INTENTS = {
@@ -55,7 +55,7 @@ public class AutostartModule extends ReactContextBaseJavaModule {
   public void open() {
     for (Intent intent : AUTO_START_INTENTS) {
       if (this.reactContext.getPackageManager().resolveActivity(intent, PackageManager.MATCH_DEFAULT_ONLY) != null) {
-        this.reactContext.startActivity(intent);
+        getReactApplicationContext().startActivityForResult(intent, REQUEST_CODE, null);
         break;
       }
     }
